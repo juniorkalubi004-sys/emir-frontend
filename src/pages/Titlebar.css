@@ -1,0 +1,60 @@
+
+/* LEFT */
+
+.logo {
+  width: 20px;
+  height: 20px;
+}
+.app-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+}
+/* CENTER DRAG */
+.drag-region {
+  flex: 1;
+
+  width: 100px;
+  height: 21px;
+  -webkit-app-region: drag;
+}
+/* RIGHT */
+.titlebar-right {
+  display: flex;
+  gap: 6px;
+  right: 0;
+  margin-right: 0;
+
+}
+.titlebar-right button {
+ 
+  right: 0;
+  background: transparent;
+  border-radius: 0px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+  -webkit-app-region: no-drag;
+}
+.titlebar-right button:hover {
+  background: #f2f2f2;
+  color: #111;
+}
+/* CLOSE BUTTON */
+.titlebar-right .close:hover {
+  background: #ff4d4d;
+  color: white;
+  padding: auto;
+}
+.titlebar {
+ width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  right: 0;
+  -webkit-app-region: drag; /* 👈 permet de déplacer la fenêtre */
+}
